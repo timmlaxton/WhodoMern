@@ -162,6 +162,8 @@ img {
 .alert-primary {
   background: var(--primary-color);
   color: #fff;
+  background-color: transparent;
+  border: 1px solid;
 }
 
 .btn-light,
@@ -169,7 +171,9 @@ img {
 .badge-light,
 .alert-light {
   background: var(--light-color);
-  color: #333;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid;
 }
 
 .btn-dark,
@@ -201,7 +205,7 @@ img {
 .badge-white,
 .alert-white {
   background: #fff;
-  color: #333;
+  background-color: transparent;
   border: #ccc solid 1px;
 }
 
