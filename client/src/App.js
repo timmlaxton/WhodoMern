@@ -1,6 +1,9 @@
-import React, {Fragment, useEffect} from 'react';
+import React, {Fragment} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 //import SearchBar from './components/layout/SearchBar';
+
+import { Provider } from 'react-redux';
+import store from './store'
 import NavBar from './components/layout/Navbar'
 import Landing from './components/layout/Landing'
 import Register from './components/auth/Register'
@@ -12,12 +15,12 @@ import Login from './components/auth/Login'
 
 import './App.css';
 
-const App = () => {
+const App = () => (
   // useEffect(() => {
   //   // Init Materialize JS
   //   M.AutoInit();
   // });
-    return (
+      <Provider store={store}> 
       <Router> 
       <Fragment>
       <NavBar/>
@@ -30,8 +33,8 @@ const App = () => {
         </section>
     </Fragment>
     </Router> 
-    )
-};
+    </Provider>
+);
 
 
 export default App;
