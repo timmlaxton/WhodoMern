@@ -6,8 +6,9 @@ const Landing = () => {
     <section className="landing">
       <div className="dark-overlay">
         <div className="landing-inner">
-          <h1 className="x-large">Whodo</h1>
-          <p className="lead">
+          <h1 className="x-large multicolortext">Whodo</h1>
+          
+          <p className="lead ">
             Make Notes - Track Progress - Get Things Done
           </p>
           <div className="buttons">

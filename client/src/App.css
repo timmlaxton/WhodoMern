@@ -65,7 +65,7 @@ img {
 .text-center {
   text-align: center;
 }
-
+left, violet, indigo, green, blue, yellow,
 .text-primary {
   color: var(--primary-color);
 }
@@ -73,6 +73,16 @@ img {
 .text-dark {
   color: var(--dark-color);
 }
+
+
+      .multicolortext {
+        background-image: linear-gradient(to left, #BB8FCE ,#85C1E9,#73C6B6,#82E0AA, #F7DC6F, #F8C471, #FF5733);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+   
 
 /* Padding */
 .p {
@@ -128,15 +138,14 @@ img {
 
 .btn {
   display: inline-block;
-  background: var(--light-color);
+  background: #fff;
   color: #333;
   padding: 0.4rem 1.3rem;
   font-size: 1rem;
-  border: none;
   cursor: pointer;
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
-  outline: none;
+  border: 3px solid;
 }
 
 .badge {
@@ -154,6 +163,7 @@ img {
   opacity: 0.9;
   background: var(--light-color);
   color: #333;
+  
 }
 
 .btn-primary,
@@ -161,7 +171,7 @@ img {
 .badge-primary,
 .alert-primary {
   background: var(--primary-color);
-  color: #fff;
+  color: grey;
   background-color: transparent;
   border: 1px solid;
 }
@@ -230,7 +240,7 @@ img {
 
 /* Overlay */
 .dark-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
   left: 0;
@@ -307,17 +317,18 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.7rem 2rem;
+  padding: 0.rem 2rem;
   position: fixed;
   z-index: 1;
   width: 100%;
   top: 0;
-  border-bottom: solid 1px var(--primary-color);
-  opacity: 0.9;
+  border-bottom: solid 1px transparent;
+  opacity: 0.8;
 }
 
 .navbar ul {
   display: flex;
+  color: #fff;
 }
 
 .navbar a {
